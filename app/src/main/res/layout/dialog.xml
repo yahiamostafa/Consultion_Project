@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#123456"
+    >
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/aspirin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Take an Aspirin"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_edit_text"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/good"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You're good"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edit_text"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Visit the nearest Hospital"
+            android:background="@drawable/rounded_edit_text"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edit_text"
+            android:textColor="#000"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/othersTxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="15dp"
+        android:enabled="false"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Others ..." />
+
+    <Button
+        android:id="@+id/CancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/othersTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/SendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/othersTxt"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text="Send" />
+</RelativeLayout>

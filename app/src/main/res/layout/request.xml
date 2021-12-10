@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_edit_text"
+    app:cardBackgroundColor="#123456"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            android:textColor="#0f0"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/status"
+            android:layout_marginRight="7dp"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/questionTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status"
+            android:layout_margin="7dp"
+            android:layout_marginBottom="10dp"
+            android:text="Question will be here"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/answerTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/questionTxt"
+            android:layout_margin="7dp"
+            android:text="No Answers yet"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/hospitalImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answerTxt"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/map" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

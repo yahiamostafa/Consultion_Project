@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_edit_text"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="7dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:checked="true"
+                android:text="Heart"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg1"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:text="Orthopedic surgery"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rg3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg2"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:text="Urology"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rg4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg3"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:text="Ophthalmology"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rg5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg4"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:text="Obstetrics and Gynecology"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rg6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg5"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:text="Children"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rg7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg6"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:text="Chest and Respiratory"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rg8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg7"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:text="Ear, Nose and Throat"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rg9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg8"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:text="Neurology"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rg10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg9"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:text="Dermatology"
+                android:textSize="20dp" />
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/secSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroup2"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="Send" />
+        </RelativeLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

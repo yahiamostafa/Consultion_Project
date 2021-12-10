@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "672755281524",
+    "project_id": "consultion-7280c",
+    "storage_bucket": "consultion-7280c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672755281524:android:1abcc658e969937c0c2b21",
+        "android_client_info": {
+          "package_name": "com.example.consultion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672755281524-v96kkaaptra722j3jbiefbipblcgvvcp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0bxIKJQkgCsiYy4ZkK-1IZe8nk927iLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672755281524-v96kkaaptra722j3jbiefbipblcgvvcp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

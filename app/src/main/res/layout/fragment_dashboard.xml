@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.DashboardFragment"
-    android:background="#bbf">
+    android:background="#bbf"
+    tools:context=".ui.dashboard.DashboardFragment">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/saveBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
         android:src="@drawable/save" />
 
 
@@ -45,67 +45,80 @@
         android:id="@+id/nameTxt"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:padding="5dp"
         android:layout_below="@+id/userName"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/rounded_edit_text"
+        android:drawableLeft="@drawable/name"
         android:drawableRight="@drawable/edit"
         android:gravity="center"
-        android:drawableLeft="@drawable/name"
         android:hint="MyName"
         android:inputType="textEmailAddress"
+        android:padding="5dp"
         android:textColor="#000" />
 
     <EditText
         android:id="@+id/ageTxt"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:padding="5dp"
         android:layout_below="@+id/nameTxt"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/rounded_edit_text"
+        android:drawableLeft="@drawable/age"
         android:drawableRight="@drawable/edit"
         android:gravity="center"
         android:hint="AGE"
-        android:drawableLeft="@drawable/age"
         android:inputType="number"
+        android:padding="5dp"
         android:textColor="#000" />
 
     <EditText
         android:id="@+id/numberTxt"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:padding="5dp"
         android:layout_below="@+id/ageTxt"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/rounded_edit_text"
+        android:drawableLeft="@drawable/number"
         android:drawableRight="@drawable/edit"
         android:gravity="center"
         android:hint="Number"
-        android:drawableLeft="@drawable/number"
         android:inputType="number"
+        android:padding="5dp"
         android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/makeVoiceCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="7dp"
+        android:text="Make A Voice Call"
+        android:textColor="#000"
+        android:textSize="20dp" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/signBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/rounded_edit_text"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_edit_text"
         android:src="@drawable/exit" />
 </RelativeLayout>

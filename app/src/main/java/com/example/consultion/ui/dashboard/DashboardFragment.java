@@ -23,6 +23,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import com.example.consultion.Call;
 import com.example.consultion.MainActivity;
 import com.example.consultion.R;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -45,7 +46,7 @@ import static android.app.Activity.RESULT_OK;
 public class DashboardFragment extends Fragment {
     FirebaseAuth mAuth;
     FirebaseFirestore firestore;
-    TextView email ;
+    TextView email ,makeCall;
     EditText  name , age , number;
     ImageView image;
     public static boolean isDoctor = false ;
@@ -60,6 +61,13 @@ public class DashboardFragment extends Fragment {
     mAuth = FirebaseAuth.getInstance();
     signOutBtn = root.findViewById(R.id.signBtn);
     name = root.findViewById(R.id.nameTxt);
+    makeCall = root.findViewById(R.id.makeVoiceCall);
+    makeCall.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(getActivity() , Call.class));
+        }
+    });
     age  = root.findViewById(R.id.ageTxt);
     number = root.findViewById(R.id.numberTxt);
     Bundle bundle = getArguments();
